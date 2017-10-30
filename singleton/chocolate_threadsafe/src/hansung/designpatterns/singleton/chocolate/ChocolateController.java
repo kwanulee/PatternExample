@@ -1,29 +1,32 @@
 package hansung.designpatterns.singleton.chocolate;
- 
+
+import java.util.Date;
+
 public class ChocolateController {
+	private static final int THREAD_NUM=1000;
+	static long total=0;
 	public static void main(String args[]) {
-		Thread thread1 = new Thread() {
-			public void run() {
-				ChocolateBoiler boiler = ChocolateBoiler.getInstance();
-				boiler.fill();
-				boiler.boil();
-				boiler.drain();
-			}
-		};
 
-		
+		Thread[] threads = new Thread[THREAD_NUM];
+		for (int i = 0; i < THREAD_NUM; i++) {
+			threads[i] = new Thread() {
+				public void run() {
+					long start = System.currentTimeMillis();
+					ChocolateBoiler boiler = ChocolateBoiler.getInstance();
+					long end = System.currentTimeMillis();
+					long elapse = end-start;
+					System.out.println("elapse =" +elapse);
+//					boiler.fill();
+//					boiler.boil();
+//					boiler.drain();
 
-		// will return the existing instance
-		Thread thread2 = new Thread() {
-			public void run() {
-				ChocolateBoiler boiler = ChocolateBoiler.getInstance();
-				boiler.fill();
-				boiler.boil();
-				boiler.drain();
-			}
-		};
-		
-		thread1.start();
-		thread2.start();
+				}
+			};
+		}
+
+		for (int i = 0; i < THREAD_NUM; i++) {
+			threads[i].start();
+		}
+
 	}
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="da532d5c-6f11-49fb-a71c-b18743722f60" name="Default" comment="" />
+    <list default="true" id="bb6b3bc0-e31f-4fa4-b4e4-d1fc3583dfd0" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -12,50 +12,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Menu.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hansung/designpatterns/iterator/dinermergeri/Menu.java">
+      <file leaf-file-name="CafeMenu.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/hansung/designpatterns/iterator/dinermergercafe/CafeMenu.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="76">
-              <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="DinerMenu.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hansung/designpatterns/iterator/dinermergeri/DinerMenu.java">
+        <entry file="file://$PROJECT_DIR$/src/hansung/designpatterns/iterator/dinermergercafe/DinerMenu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-152">
+            <state relative-caret-position="-95">
               <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PancakeHouseMenu.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/hansung/designpatterns/iterator/dinermergeri/PancakeHouseMenu.java">
+      <file leaf-file-name="Waitress.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/hansung/designpatterns/iterator/dinermergercafe/Waitress.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-217">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DinerMenuIterator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hansung/designpatterns/iterator/dinermergeri/DinerMenuIterator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Waitress.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hansung/designpatterns/iterator/dinermergeri/Waitress.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
+            <state relative-caret-position="76">
               <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
               <folding />
             </state>
@@ -68,12 +48,6 @@
     <option name="externalProjectsViewState">
       <projects_view />
     </option>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="22" />
-    <option name="y" value="133" />
-    <option name="width" value="1927" />
-    <option name="height" value="820" />
   </component>
   <component name="ProjectView">
     <navigator currentView="PackagesPane" proportions="" version="1">
@@ -90,36 +64,36 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="AndroidView" />
-      <pane id="ProjectPane">
+      <pane id="PackagesPane">
         <subPane>
           <expand>
             <path>
-              <item name="dinermergeri" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dinermergeri" type="462c0819:PsiDirectoryNode" />
+              <item name="dinermergercafe" type="58d84e3e:PackageViewProjectNode" />
+              <item name="dinermergercafe" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="dinermergercafe" type="58d84e3e:PackageViewProjectNode" />
+              <item name="dinermergercafe" type="616d4139:PackageViewModuleNode" />
+              <item name="hansung.designpatterns.iterator.dinermergercafe" type="1f31426a:PackageElementNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="PackagesPane">
+      <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="dinermergeri" type="58d84e3e:PackageViewProjectNode" />
-              <item name="dinermergeri" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="dinermergeri" type="58d84e3e:PackageViewProjectNode" />
-              <item name="dinermergeri" type="616d4139:PackageViewModuleNode" />
-              <item name="hansung.designpatterns.iterator.dinermergeri" type="1f31426a:PackageElementNode" />
+              <item name="dinermergercafe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dinermergercafe" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="RunDashboard">
@@ -222,11 +196,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="da532d5c-6f11-49fb-a71c-b18743722f60" name="Default" comment="" />
-      <created>1509948951150</created>
+      <changelist id="bb6b3bc0-e31f-4fa4-b4e4-d1fc3583dfd0" name="Default" comment="" />
+      <created>1509952777862</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1509948951150</updated>
+      <updated>1509952777862</updated>
     </task>
     <servers />
   </component>
@@ -269,42 +243,26 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/hansung/designpatterns/iterator/dinermergeri/DinerMenuIterator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hansung/designpatterns/iterator/dinermergeri/Waitress.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hansung/designpatterns/iterator/dinermergeri/Menu.java">
+    <entry file="file://$PROJECT_DIR$/src/hansung/designpatterns/iterator/dinermergercafe/CafeMenu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hansung/designpatterns/iterator/dinermergeri/DinerMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-152">
           <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hansung/designpatterns/iterator/dinermergeri/PancakeHouseMenu.java">
+    <entry file="file://$PROJECT_DIR$/src/hansung/designpatterns/iterator/dinermergercafe/DinerMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-217">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="-95">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hansung/designpatterns/iterator/dinermergercafe/Waitress.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding />
         </state>
       </provider>

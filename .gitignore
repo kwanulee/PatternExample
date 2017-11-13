@@ -26,3 +26,10 @@
 hs_err_pid*
 
 # End of https://www.gitignore.io/api/java
+
+# Created by https://www.gitignore.io/api/intellij
+
+### Intellij ###
+# Intellij
+*.iml
+.idea/

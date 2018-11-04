@@ -3,10 +3,10 @@ package hansung.designpatterns.iterator.dinermerger;
 import java.util.ArrayList;
 
 public class Waitress {
-	Menu pancakeHouseMenu;
-	Menu dinerMenu;
+	PancakeHouseMenu pancakeHouseMenu;
+	DinerMenu dinerMenu;
  
-	public Waitress(Menu pancakeHouseMenu, Menu dinerMenu) {
+	public Waitress(PancakeHouseMenu pancakeHouseMenu, DinerMenu dinerMenu) {
 		this.pancakeHouseMenu = pancakeHouseMenu;
 		this.dinerMenu = dinerMenu;
 	}

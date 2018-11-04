@@ -2,7 +2,7 @@ package hansung.designpatterns.iterator.dinermerger;
 
 import java.util.ArrayList;
 
-public class PancakeHouseMenu implements Menu {
+public class PancakeHouseMenu {
 	ArrayList<MenuItem> menuItems;
  
 	public PancakeHouseMenu() {

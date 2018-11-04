@@ -1,29 +1,23 @@
 package hansung.designpatterns.iterator.dinermergercafe;
 
+import java.util.ArrayList;
 import java.util.Iterator;
-  
-public class Waitress {
-	Menu pancakeHouseMenu;
-	Menu dinerMenu;
-	Menu cafeMenu;
- 
-	public Waitress(Menu pancakeHouseMenu, Menu dinerMenu, Menu cafeMenu) {
-		this.pancakeHouseMenu = pancakeHouseMenu;
-		this.dinerMenu = dinerMenu;
-		this.cafeMenu = cafeMenu;
-	}
- 
-	public void printMenu() {
-		Iterator<MenuItem> pancakeIterator = pancakeHouseMenu.createIterator();
-		Iterator<MenuItem> dinerIterator = dinerMenu.createIterator();
-		Iterator<MenuItem> cafeIterator = cafeMenu.createIterator();
 
-		System.out.println("MENU\n----\nBREAKFAST");
-		printMenu(pancakeIterator);
-		System.out.println("\nLUNCH");
-		printMenu(dinerIterator);
-		System.out.println("\nDINNER");
-		printMenu(cafeIterator);
+public class Waitress {
+	ArrayList<MenuItem> menus;
+
+
+	public Waitress(ArrayList<MenuItem> menus) {
+		this.menus = menus;
+	}
+
+	public void printMenu() {
+		Iterator<?> menuIterator = menus.iterator();
+		while(menuIterator.hasNext()) {
+			Menu menu = (Menu)menuIterator.next();
+			printMenu(menu.createIterator());
+			System.out.println();
+		}
 	}
  
 	private void printMenu(Iterator<MenuItem> iterator) {
@@ -34,30 +28,30 @@ public class Waitress {
 			System.out.println(menuItem.getDescription());
 		}
 	}
- 
+
 	public void printVegetarianMenu() {
 		System.out.println("\nVEGETARIAN MENU\n---------------");
-		printVegetarianMenu(pancakeHouseMenu.createIterator());
-		printVegetarianMenu(dinerMenu.createIterator());
-		printVegetarianMenu(cafeMenu.createIterator());
-	}
- 
-	public boolean isItemVegetarian(String name) {
-		Iterator<MenuItem> pancakeIterator = pancakeHouseMenu.createIterator();
-		if (isVegetarian(name, pancakeIterator)) {
-			return true;
+		Iterator<?> menuIterator = menus.iterator();
+		while(menuIterator.hasNext()) {
+			Menu menu = (Menu)menuIterator.next();
+			printVegetarianMenu(menu.createIterator());
 		}
-		Iterator<MenuItem> dinerIterator = dinerMenu.createIterator();
-		if (isVegetarian(name, dinerIterator)) {
-			return true;
-		}
-		Iterator<MenuItem> cafeIterator = cafeMenu.createIterator();
-		if (isVegetarian(name, cafeIterator)) {
-			return true;
-		}
-		return false;
 	}
 
+	public boolean isItemVegetarian(String name) {
+
+
+		Iterator<?> menuIterator = menus.iterator();
+		while(menuIterator.hasNext()) {
+			Menu menu = (Menu)menuIterator.next();
+			Iterator<MenuItem> menuItemIterator = menu.createIterator();
+			if (isVegetarian(name,menuItemIterator)) {
+				return true;
+			}
+		}
+
+		return false;
+	}
 
 	private void printVegetarianMenu(Iterator<MenuItem> iterator) {
 		while (iterator.hasNext()) {

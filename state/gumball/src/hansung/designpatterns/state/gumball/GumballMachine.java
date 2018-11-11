@@ -58,13 +58,15 @@ public class GumballMachine {
 	}
  
 	private void dispense() {
-		System.out.println("A gumball comes rolling out the slot");
-		count = count - 1;
-		if (count == 0) {
-			System.out.println("Oops, out of gumballs!");
-			state = SOLD_OUT;
-		} else {
-			state = NO_QUARTER;
+		if (state == SOLD) {
+			System.out.println("A gumball comes rolling out the slot");
+			count = count - 1;
+			if (count == 0) {
+				System.out.println("Oops, out of gumballs!");
+				state = SOLD_OUT;
+			} else {
+				state = NO_QUARTER;
+			}
 		}
 	}
 
